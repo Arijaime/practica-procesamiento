@@ -23,15 +23,15 @@ namespace Ejercicio1
 
             posSpace = ingresoDatos.IndexOf(" ");
 
-            int ultimoChar = longitud - posSpace;
+            int ultimoChar = longitud - posSpace-1;
 
             Console.WriteLine("posicion espacio : "+ posSpace);
 
 
             nombre = ingresoDatos.Substring(0, posSpace);
-            apellido = ingresoDatos.Substring((posSpace),ultimoChar);
+            apellido = ingresoDatos.Substring((posSpace+1),ultimoChar);
 
-            //ingresoDatos = String.Concat(apellido, nombre);
+            
             salidaDatos = String.Concat(apellido,String.Concat(" ",nombre)) ;
             //salidaDatos = salidaDatos.Remove(0, 1);
 
